@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
+        <Nullable>disable</Nullable>
+        <PackageId>Intranet.Web.App</PackageId>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <LangVersion>12</LangVersion>
+        <RootNamespace>Intranet.Web.Portal</RootNamespace>
+    </PropertyGroup>
+    
+    <!-- Temporary hides the warning ASP0023 while the error in the Microsoft Analyzer is not fixed -->
+    <PropertyGroup>
+        <NoWarn>ASP0023</NoWarn>
+    </PropertyGroup>
+ 
+</Project>
+
+
